@@ -7,6 +7,9 @@
   padding-bottom: 40px;
   font-size: 3rem;
 }
+.header__image {
+  display: none;
+}
 
 .about__title {
   text-align: center;
@@ -107,6 +110,10 @@
 .footer__link--email {
   text-decoration: none;
   color: white;
+}
+
+.navbar {
+  display: none;
 }
 
 * {
