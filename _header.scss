@@ -1,15 +1,31 @@
 .header {
   &__greet {
-    padding: 40px 0;
     font-size: 1rem;
   }
 
   &__title {
-    padding-bottom: 40px;
+    padding-top: 40px;
     font-size: 3rem;
   }
 
   &__image {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    padding-top: 100px;
+
+    &__text-container {
+      max-width: 70vw;
+    }
+
+    &__image {
+      display: unset;
+      max-width: 30vw;
+      max-height: 300px;
+    }
   }
 }
