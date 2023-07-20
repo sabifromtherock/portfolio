@@ -8,24 +8,29 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- <nav>
-      <p>Szabolcs Sziklai</p>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Get in Touch</a></li>
+    <nav class="navbar">
+      <p class="navbar__title">Szabolcs Sziklai</p>
+      <ul class="navbar__list">
+        <li><a class="navbar__item" href="#home">Home</a></li>
+        <li><a class="navbar__item" href="#about">About</a></li>
+        <li><a class="navbar__item" href="#projects">Projects</a></li>
+        <li><a class="navbar__item" href="#contact">Get in Touch</a></li>
       </ul>
-    </nav> -->
-    <header class="header">
+    </nav>
+    <header class="header" id="home">
       <p class="header__greet">👋 Hey! I'm Szabolcs Sziklai</p>
       <h1 class="header__title">
         A Junior Software Developer based in the UK.
       </h1>
+      <img
+        class="header__image"
+        src="./assets/Picture.svg"
+        alt="computing young male"
+      />
     </header>
     <main>
       <section>
-        <div class="about">
+        <div class="about" id="about">
           <h2 class="about__title">About Me</h2>
           <img
             class="about__image"
@@ -67,7 +72,7 @@
         </div>
       </section>
       <section>
-        <div class="project-container">
+        <div class="project-container" id="projects">
           <h2 class="project-container__title">My Projects</h2>
           <div class="project-card">
             <img
@@ -107,7 +112,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__links-container">
+      <div class="footer__links-container" id="contact">
         <a
           class="footer__link"
           href="https://github.com/sabifromtherock"
