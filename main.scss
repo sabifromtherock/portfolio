@@ -1,0 +1,21 @@
+@use "./header";
+
+@use "./about";
+
+@use "./skills";
+
+@use "./project";
+
+@use "./footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main {
+  padding: 50px;
+  margin: auto;
+}
