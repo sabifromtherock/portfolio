@@ -1,0 +1,11 @@
+.about {
+  &__title {
+    text-align: center;
+  }
+
+  &__image {
+    padding: 30px;
+    max-width: 80vw;
+    border-radius: 50%;
+  }
+}
