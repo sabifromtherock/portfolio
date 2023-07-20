@@ -9,8 +9,11 @@
 
 .project-card {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 
   &__image {
+    align-self: center;
     max-width: calc(100vw - 100px);
     padding-bottom: 20px;
   }
