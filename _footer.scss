@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+.footer {
+  background-color: $secondary_color;
+  text-align: center;
+  padding-bottom: 30px;
+
+  &__links-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    margin: 10px;
+  }
+
+  &__link--email {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
