@@ -67,8 +67,8 @@
         </div>
       </section>
       <section>
-        <div class="projects">
-          <h2 class="projects__title">My Projects</h2>
+        <div class="project-container">
+          <h2 class="project-container__title">My Projects</h2>
           <div class="project-card">
             <img
               class="project-card__image"
@@ -76,9 +76,26 @@
               alt="project screenshot"
             />
             <div class="project-card__text-container">
-              <h3 class="project-card__lang">React</h3>
+              <h3 class="project-card__lang">REACT</h3>
               <h2 class="project-card__title">Client Project</h2>
-              <p class="project-card__content">
+              <p class="project-card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                praesentium perferendis aliquam libero in?
+              </p>
+              <a class="project-card__link" href="#"> Code &lt;/&gt; </a>
+              <a class="project-card__link" href="#"> Preview &lt;/&gt; </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-card__image"
+              src="./assets/Project-Image.svg"
+              alt="project screenshot"
+            />
+            <div class="project-card__text-container">
+              <h3 class="project-card__lang">REACT</h3>
+              <h2 class="project-card__title">Client Project</h2>
+              <p class="project-card__description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
                 praesentium perferendis aliquam libero in?
               </p>
@@ -90,21 +107,28 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__links-container">
+        <a
+          class="footer__link"
+          href="https://github.com/sabifromtherock"
+          target="_blank"
+          ><img src="./assets/Github.svg" alt="github icon"
+        /></a>
+        <a
+          class="footer__link"
+          href="https://www.linkedin.com/in/mr-szabolcs-sziklai/"
+          target="_blank"
+          ><img src="./assets/linkedIn.svg" alt="linkedin icon"
+        /></a>
+        <a class="footer__link" href="#"
+          ><img src="./assets/CV.svg" alt="cv icon"
+        /></a>
+      </div>
       <a
-        class="footer__link"
-        href="https://github.com/sabifromtherock"
-        target="_blank"
-        ><img src="./assets/Github.svg" alt="github icon"
-      /></a>
-      <a
-        class="footer__link"
-        href="https://www.linkedin.com/in/mr-szabolcs-sziklai/"
-        target="_blank"
-        ><img src="./assets/linkedIn.svg" alt="linkedin icon"
-      /></a>
-      <a class="footer__link" href="#"
-        ><img src="./assets/CV.svg" alt="cv icon"
-      /></a>
+        class="footer__link--email"
+        href="mailto:szabolcs.sziklai@protonmail.com"
+        >szabolcs.sziklai@protonmail.com</a
+      >
     </footer>
   </body>
 </html>
