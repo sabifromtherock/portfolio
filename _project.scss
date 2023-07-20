@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+.project-container {
+  &__title {
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+.project-card {
+  margin-top: 50px;
+
+  &__image {
+    max-width: calc(100vw - 100px);
+    padding-bottom: 20px;
+  }
+
+  &__lang {
+    font-size: 0.8rem;
+  }
+
+  &__description {
+    padding: 20px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    border: 1px solid $secondary_color;
+    color: $secondary_color;
+    font-weight: bolder;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+}
