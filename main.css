@@ -119,6 +119,37 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 50px;
+    display: unset;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 50px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+  }
+  .navbar__title {
+    font-weight: bolder;
+  }
+  .navbar__list {
+    list-style-type: none;
+    display: flex;
+  }
+  .navbar__item,
+  .navbar__item--border {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    padding: 5px;
+  }
+  .navbar__item--border {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
