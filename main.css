@@ -38,9 +38,10 @@
   .about {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     grid-auto-columns: 1fr;
     gap: 20px 20px;
+    padding-top: 30px;
   }
   .about__image {
     grid-area: 1/1/3/2;
@@ -100,6 +101,17 @@
   margin: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__icon-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .project-container__title {
   text-align: center;
   padding-top: 30px;
