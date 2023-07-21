@@ -1,16 +1,18 @@
 @use "./variables" as *;
 
-.project-container {
-  &__title {
-    text-align: center;
-    padding-top: 30px;
-  }
+.projects {
+  text-align: center;
+  margin: 40px;
+  padding-top: 100px;
 }
 
 .project-card {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 
   &__image {
+    align-self: center;
     max-width: calc(100vw - 100px);
     padding-bottom: 20px;
   }
@@ -28,8 +30,33 @@
     border: 1px solid $secondary_color;
     color: $secondary_color;
     font-weight: bolder;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-right: 20px;
     border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 110px;
+  }
+
+  &__link:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-container {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: calc((90vw - 200px) / 3);
+
+    &__image {
+      max-width: calc((90vw - 200px) / 3);
+    }
   }
 }

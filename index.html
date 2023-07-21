@@ -8,24 +8,35 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- <nav>
-      <p>Szabolcs Sziklai</p>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Get in Touch</a></li>
-      </ul>
-    </nav> -->
-    <header class="header">
-      <p class="header__greet">👋 Hey! I'm Szabolcs Sziklai</p>
-      <h1 class="header__title">
-        A Junior Software Developer based in the UK.
-      </h1>
+    <nav>
+      <div class="navbar">
+        <p class="navbar__title">Szabolcs Sziklai</p>
+        <ul class="navbar__list">
+          <li><a class="navbar__item" href="#home">Home</a></li>
+          <li><a class="navbar__item" href="#about">About</a></li>
+          <li><a class="navbar__item" href="#projects">Projects</a></li>
+          <li>
+            <a class="navbar__item--border" href="#contact">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header" id="home">
+      <div class="header__text-container">
+        <p class="header__greet">👋 Hey! I'm Szabolcs Sziklai</p>
+        <h1 class="header__title">
+          A Junior Software Developer based in the UK.
+        </h1>
+      </div>
+      <img
+        class="header__image"
+        src="./assets/Picture.svg"
+        alt="computing young male"
+      />
     </header>
     <main>
       <section>
-        <div class="about">
+        <div class="about" id="about">
           <h2 class="about__title">About Me</h2>
           <img
             class="about__image"
@@ -66,9 +77,26 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="projects" id="projects">
+        <h2 class="projects-title">My Projects</h2>
         <div class="project-container">
-          <h2 class="project-container__title">My Projects</h2>
+          <div class="project-card">
+            <img
+              class="project-card__image"
+              src="./assets/Project-Image.svg"
+              alt="project screenshot"
+            />
+            <div class="project-card__text-container">
+              <h3 class="project-card__lang">REACT</h3>
+              <h2 class="project-card__title">Client Project</h2>
+              <p class="project-card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                praesentium perferendis aliquam libero in?
+              </p>
+              <a class="project-card__link" href="#"> Code &lt;/&gt; </a>
+              <a class="project-card__link" href="#"> Preview &lt;/&gt; </a>
+            </div>
+          </div>
           <div class="project-card">
             <img
               class="project-card__image"
@@ -107,7 +135,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__links-container">
+      <div class="footer__links-container" id="contact">
         <a
           class="footer__link"
           href="https://github.com/sabifromtherock"

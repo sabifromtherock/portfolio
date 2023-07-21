@@ -57,3 +57,16 @@
     margin: auto;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
