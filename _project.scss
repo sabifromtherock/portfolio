@@ -37,6 +37,11 @@
     margin-bottom: 10px;
     width: 110px;
   }
+
+  &__link:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
 }
 
 @media screen and (min-width: 768px) {
