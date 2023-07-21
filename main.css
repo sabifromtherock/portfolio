@@ -112,9 +112,10 @@
     flex-direction: row-reverse;
   }
 }
-.project-container__title {
+.projects {
   text-align: center;
-  padding-top: 30px;
+  margin: 40px;
+  padding-top: 100px;
 }
 
 .project-card {
@@ -143,6 +144,20 @@
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .project-container {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    width: calc((90vw - 200px) / 3);
+  }
+  .project-card__image {
+    max-width: calc((90vw - 200px) / 3);
+  }
+}
 .footer {
   background-color: black;
   text-align: center;
