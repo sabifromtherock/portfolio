@@ -30,9 +30,12 @@
     border: 1px solid $secondary_color;
     color: $secondary_color;
     font-weight: bolder;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-right: 20px;
     border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 110px;
   }
 }
 
