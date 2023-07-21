@@ -16,6 +16,7 @@
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
+    justify-content: space-between;
     padding-top: 100px;
 
     &__text-container {
