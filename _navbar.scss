@@ -15,27 +15,27 @@
     top: 0;
     background-color: $primary-color;
     width: 100vw;
-  }
 
-  .navbar__title {
-    font-weight: bolder;
-  }
+    &__title {
+      font-weight: bolder;
+    }
 
-  .navbar__list {
-    list-style-type: none;
-    display: flex;
-  }
+    &__list {
+      list-style-type: none;
+      display: flex;
+    }
 
-  .navbar__item,
-  .navbar__item--border {
-    text-decoration: none;
-    color: $secondary_color;
-    margin-left: 20px;
-    padding: 5px;
-  }
+    &__item,
+    &__item--border {
+      text-decoration: none;
+      color: $secondary_color;
+      margin-left: 20px;
+      padding: 5px;
+    }
 
-  .navbar__item--border {
-    border: 1px solid $secondary_color;
-    border-radius: 5px;
+    &__item--border {
+      border: 1px solid $secondary_color;
+      border-radius: 5px;
+    }
   }
 }
