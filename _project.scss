@@ -1,7 +1,6 @@
 @use "./variables" as *;
 
 .projects {
-  text-align: center;
   margin: 40px;
   padding-top: 100px;
 }
@@ -35,7 +34,7 @@
     border-radius: 5px;
     display: inline-block;
     margin-bottom: 10px;
-    width: 110px;
+    width: 115px;
   }
 
   &__link:hover {
