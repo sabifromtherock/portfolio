@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 .projects {
+  text-align: center;
   margin: 40px;
   padding-top: 100px;
 }
@@ -9,6 +10,7 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  text-align: start;
 
   &__image {
     align-self: center;
