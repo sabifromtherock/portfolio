@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&display=swap");
+.header {
+  margin: 20px 10vw;
+}
 .header__greet {
   font-size: 1rem;
 }
@@ -15,22 +18,25 @@
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    width: 80%;
   }
   .header__text-container {
     max-width: 70vw;
   }
   .header__image {
-    display: unset;
-    max-width: 30vw;
-    max-height: 300px;
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
   }
 }
 .about__title {
   text-align: center;
 }
 .about__image {
-  padding: 30px;
-  max-width: 80vw;
+  display: block;
+  padding: 30px 20px;
+  margin: auto;
+  max-width: 200px;
   border-radius: 50%;
 }
 
@@ -45,13 +51,14 @@
   }
   .about__image {
     grid-area: 1/1/3/2;
+    padding: 50px 20px;
     max-width: 300px;
   }
   .about__title {
     padding-top: 50px;
     grid-area: 1/2/2/3;
   }
-  .about__decription {
+  .about__description {
     grid-area: 2/2/3/3;
   }
 }
@@ -63,7 +70,7 @@
   padding: 0 20px;
 }
 .skills__icon-container {
-  padding: 40px 20px;
+  padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -118,28 +125,36 @@
 }
 .projects {
   text-align: center;
-  margin: 40px;
   padding-top: 100px;
 }
 
-.project-card {
-  margin-top: 50px;
+.project-container {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  justify-content: center;
 }
-.project-card__image {
+.project-container .project-card {
+  margin: auto;
+  max-width: 450px;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: start;
+  box-shadow: 0px 2vh 2vh rgba(0, 0, 0, 0.2);
+}
+.project-container .project-card__image {
+  width: 100%;
+  display: block;
+  margin: auto;
   align-self: center;
-  max-width: calc(100vw - 100px);
   padding-bottom: 20px;
 }
-.project-card__lang {
+.project-container .project-card__lang {
   font-size: 0.8rem;
 }
-.project-card__description {
+.project-container .project-card__description {
   padding: 20px 0;
 }
-.project-card__link {
+.project-container .project-card__link {
   text-decoration: none;
   border: 1px solid black;
   color: black;
@@ -151,7 +166,7 @@
   margin-bottom: 10px;
   width: 115px;
 }
-.project-card__link:hover {
+.project-container .project-card__link:hover {
   background-color: black;
   color: white;
 }
@@ -159,15 +174,15 @@
 @media screen and (min-width: 768px) {
   .project-container {
     display: flex;
+    flex-direction: row;
     justify-items: center;
     justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap;
   }
   .project-card {
-    width: calc((90vw - 200px) / 3);
-  }
-  .project-card__image {
-    max-width: calc((90vw - 200px) / 3);
+    margin: 10px;
+    width: 400px;
   }
 }
 .footer {
@@ -245,8 +260,7 @@
   box-sizing: border-box;
 }
 
-header,
 main {
-  padding: 50px;
   margin: auto;
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
