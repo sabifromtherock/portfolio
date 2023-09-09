@@ -5,10 +5,11 @@
   padding-top: 100px;
 }
 
-.project-container {
+.projects-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 
   .project-card {
     margin: auto;
@@ -17,13 +18,19 @@
     margin-top: 50px;
     text-align: start;
     box-shadow: 0px 2vh 2vh rgba($secondary-color, 0.2);
+    border: 2px solid rgba($secondary-color, 0.4);
+    border-radius: 10px;
 
     &__image {
       width: 100%;
       display: block;
       margin: auto;
       align-self: center;
-      padding-bottom: 20px;
+      margin-bottom: 10px;
+      max-height: 225px;
+      box-shadow: 0px 2vh 2vh rgba($secondary-color, 0.2);
+      border: 2px solid rgba($secondary-color, 0.4);
+      border-radius: 10px;
     }
 
     &__lang {
@@ -32,6 +39,7 @@
 
     &__description {
       padding: 20px 0;
+      height: 120px;
     }
 
     &__link {
@@ -55,7 +63,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .project-container {
+  .projects-container {
     display: flex;
     flex-direction: row;
     justify-items: center;

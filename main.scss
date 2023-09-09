@@ -1,14 +1,14 @@
-@use "./header";
+@use "./styles/header";
 
-@use "./about";
+@use "./styles/about";
 
-@use "./skills";
+@use "./styles/skills";
 
-@use "./project";
+@use "./styles/project";
 
-@use "./footer";
+@use "./styles/footer";
 
-@use "./navbar";
+@use "./styles/navbar";
 
 * {
   margin: 0;
