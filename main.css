@@ -105,6 +105,7 @@
   grid-area: 3/3/4/4;
 }
 .skills__icon {
+  height: 75px;
   max-width: 60px;
   margin: auto;
 }
