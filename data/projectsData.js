@@ -46,7 +46,7 @@ export const projects = [
   },
   {
     name: "Dot to Dot",
-    tech: "React, Typescript, ",
+    tech: "React, Typescript, Firebase, Firestore",
     description:
       "The project was completed over two weeks following the principles of Agile Methodology by incorporating small iterative sprints, daily-standups and demos. The application was curated and improved dynamically over the duration of the project.",
     image: "./assets/images/union-client-project.png",
