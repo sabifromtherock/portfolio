@@ -35,7 +35,6 @@ export const projects = [
     codeUrl: "https://github.com/sabifromtherock/ticket-tracker",
     liveSiteUrl: "https://sabifromtherock.github.io/ticket-tracker/",
   },
-
   {
     name: "Hoppy",
     tech: "React, Typescript",
@@ -44,5 +43,23 @@ export const projects = [
     image: "./assets/images/hoppy.png",
     codeUrl: "https://github.com/sabifromtherock/react-api-project",
     liveSiteUrl: "https://sabifromtherock.github.io/react-api-project/",
+  },
+  {
+    name: "Dot to Dot",
+    tech: "React, Typescript, ",
+    description:
+      "The project was completed over two weeks following the principles of Agile Methodology by incorporating small iterative sprints, daily-standups and demos. The application was curated and improved dynamically over the duration of the project.",
+    image: "./assets/images/union-client-project.png",
+    codeUrl: "https://github.com/nology-tech/Union-Client-Project",
+    liveSiteUrl: "https://union-client-project.web.app/splash",
+  },
+  {
+    name: "Playlist",
+    tech: "React, Typescript, Java, Spring Boot",
+    description:
+      "React application paired with a local MySQL database, allows users to manage their YouTube video playlists. Easily add, update, delete, and play their preferred videos.",
+    image: "./assets/images/playlist.png",
+    codeUrl: "https://github.com/sabifromtherock/playlist",
+    liveSiteUrl: "https://github.com/sabifromtherock/playlist",
   },
 ];
